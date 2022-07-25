@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #162133;
+  color: #c3c3c5;
+  font-size: 1.4rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 5%;
+}
+
+a {
+  word-wrap: break-word;
+}
+
+/*
+  NAVIGATION
+*/
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+
+/* PROFILE PAGE */
+
+.card {
+  background-color: #21404D;
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.card-pic {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.shay-pic {
+  max-height: 600px;
+}
+
+.big-5-img {
+  max-width: 700px;
+}
+
+table {
+  border-spacing: 10px;
+  border: solid 1px white;
+}
+
+th, td {
+  width: 120px;
+  overflow: hidden;
+}
+
+/* Ideal Jobs */
+
+.comparison-img {
+  max-width: 700px;
+}
+
+/* IT TECHNOLOGIES */
+
+.polaroid {
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+div.polaroid > img {
+  width: 100%;
+}
+
+/* LINKS */
+
+a {
+  color: #c3c3c5;
+  font-style: none;
+  text-decoration: none;
+}
+
+span > a {
+  text-decoration: underline;
+}
+
+/* Utility */
+
+.underline {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 800px) {
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
