@@ -8,6 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="FoolProof.Core" Version="1.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TiMePrototype.Application\TiMePrototype.Application.csproj" />
+    <ProjectReference Include="..\TiMePrototype.Persistence\TiMePrototype.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

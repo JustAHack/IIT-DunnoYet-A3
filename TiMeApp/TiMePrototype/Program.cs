@@ -1,5 +1,15 @@
 using FoolProof.Core;
+using MediatR;
+using System.Reflection;
+using TiMePrototype.Application;
+using TiMePrototype.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.ConfigureApplicationServices();
+builder.Services.ConfigurePersistenceServices(builder.Configuration);
+
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
