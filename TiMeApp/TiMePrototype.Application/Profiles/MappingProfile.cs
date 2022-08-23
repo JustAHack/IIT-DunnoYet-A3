@@ -12,6 +12,7 @@ public class MappingProfile : Profile
 		CreateMap<Shift, ShiftDto>().ReverseMap();
 		CreateMap<Shift, CreateShiftDto>().ReverseMap();
 		CreateMap<Shift, CreateShiftWithUserDto>().ReverseMap();
+		CreateMap<Shift, UpdateShiftDto>().ReverseMap();
 
 		CreateMap<User, UserDto>().ReverseMap()
 			.ForMember(dst => dst.Password, opt => opt.Ignore());

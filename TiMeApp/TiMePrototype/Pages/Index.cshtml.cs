@@ -1,7 +1,7 @@
 ﻿using FoolProof.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
+using TiMePrototype.Domain;
 
 namespace TiMePrototype.Pages;
 
@@ -31,23 +31,3 @@ public class IndexModel : PageModel
     }
 }
 
-public class Shift
-{
-    [Required]
-    [Display(Name = "Start time")]
-    [DataType(DataType.DateTime)]
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}", ApplyFormatInEditMode = true)]
-    [LessThan("EndTime", ErrorMessage = "Start time must be earlier than end time")]
-    public DateTime StartTime { get; set; }
-
-    [Required]
-    [Display(Name = "End time")]
-    [DataType(DataType.DateTime)]
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}", ApplyFormatInEditMode = true)]
-    [GreaterThan("StartTime", ErrorMessage = "End time must not be earlier than start time")]
-    public DateTime EndTime { get; set; }
-
-    [Required]
-    [Display(Name = "Hourly Rate")]
-    public decimal HourlyRate { get; set; } = 0;
-}

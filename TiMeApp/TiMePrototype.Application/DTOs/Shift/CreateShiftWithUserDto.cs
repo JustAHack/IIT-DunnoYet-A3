@@ -7,11 +7,8 @@ using TiMePrototype.Application.DTOs.Common;
 
 namespace TiMePrototype.Application.DTOs.Shift
 {
-    public class CreateShiftWithUserDto : BaseDto
+    public class CreateShiftWithUserDto : ShiftDto, IShiftDto
     {
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
-        public decimal HourlyRate { get; set; }
         public int UserId { get; set; }
     }
 }

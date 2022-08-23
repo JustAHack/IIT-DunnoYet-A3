@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiMePrototype.Persistence", "TiMePrototype.Persistence\TiMePrototype.Persistence.csproj", "{DA7BAC0B-B867-432C-86B1-E8C8350E3671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiMePrototype.Application", "TiMePrototype.Application\TiMePrototype.Application.csproj", "{84C90F7D-006E-4921-B0DB-4F9C4820A801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiMePrototype.Application", "TiMePrototype.Application\TiMePrototype.Application.csproj", "{84C90F7D-006E-4921-B0DB-4F9C4820A801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiMePrototype.Domain", "TiMePrototype.Domain\TiMePrototype.Domain.csproj", "{EFDA5893-97E7-4206-A55C-0079D5467BCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiMePrototype.Domain", "TiMePrototype.Domain\TiMePrototype.Domain.csproj", "{EFDA5893-97E7-4206-A55C-0079D5467BCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

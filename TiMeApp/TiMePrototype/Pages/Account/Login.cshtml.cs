@@ -40,10 +40,11 @@ public class LoginModel : PageModel
             // Create security context
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.UserName)
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(type: "Id", value: user.Id.ToString())
             };
 
-            ClaimsIdentity identity = new ClaimsIdentity(claims, "MyCookieAuth");
+            ClaimsIdentity identity = new ClaimsIdentity(claims, "CookieAuth");
             ClaimsPrincipal claimsPrincipal = new(identity);
 
             var authProperties = new AuthenticationProperties
@@ -53,7 +54,7 @@ public class LoginModel : PageModel
 
             await HttpContext.SignInAsync("CookieAuth", claimsPrincipal, authProperties);
 
-            return RedirectToPage("/Index");
+            return RedirectToPage("/TimesheetManagement/Shifts");
         }
         return Page();
     }

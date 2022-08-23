@@ -17,6 +17,7 @@ public static class PersistenceServicesRegistration
 
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IShiftRepository, ShiftRepository>();
 
         return services;
     }

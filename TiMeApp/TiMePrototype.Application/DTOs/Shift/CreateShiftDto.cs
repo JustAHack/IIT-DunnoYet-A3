@@ -4,9 +4,6 @@ using TiMePrototype.Application.DTOs.Common;
 
 namespace TiMePrototype.Application.DTOs.Shift;
 
-public class CreateShiftDto : BaseDto
+public class CreateShiftDto : ShiftDto, IShiftDto
 {
-    public DateTime StartTime { get; set; }
-    public DateTime EndTime { get; set; }
-    public decimal HourlyRate { get; set; }
 }

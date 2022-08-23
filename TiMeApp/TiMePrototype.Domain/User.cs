@@ -18,5 +18,5 @@ public class User : BaseDomainEntity
             _password = PBKDF2.Hash(value);
         }
     }
-    public IEnumerable<Shift> Shifts { get; set; }
+    public IEnumerable<Shift>? Shifts { get; set; }
 }
