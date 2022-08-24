@@ -30,16 +30,16 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.nav-img{
-  max-width: 120px;
-}
-
 
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.2rem;
   list-style-type: none;
+}
+
+.nav-img{
+  max-width: 100px;
 }
 
 body {
@@ -77,14 +77,25 @@ body {
 /* TOOLS & TECH */
 
 .card-pic-2 {
-  max-width: 100px;
+  max-height: 110px;
   border-radius: 6px;
 }
 
 .card-pic-devops {
-  max-height: 110px
+  max-height: 110px;
   border-radius: 6px;
 }
+
+/* TOOLS & TECH */
+.card-pic-3 {
+  max-width: 500px;
+  border-radius: 6px;
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;
+
+}
+
 
 /* TIMEFRAME */
 
@@ -123,32 +134,26 @@ body {
 }
 
 
-/* IT TECHNOLOGIES */
-
-.polaroid {
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  margin: 20px auto;
-  max-width: 500px;
-}
-
-div.polaroid > img {
-  width: 100%;
-}
-
 /* LINKS */
 
 a {
-  color: #c3c3c5;
+  color: #27039d;
   font-style: none;
   text-decoration: none;
 }
 
 span > a {
   text-decoration: underline;
+}
+
+/* REFERENCES */
+
+.references {
+  background-color: #4232647e;
+  font-size: small;
+  padding: 10px;
+  width: 80%;
+  word-wrap: break-word;
 }
 
 /* Utility */
