@@ -15,13 +15,12 @@
   <header>
 
     <nav>
-      <h1><a href="../../index.html"><img src="../images/TiMe-pink_sky.png"></a></h1>
+      <h1><a href="./project.html"><image class="nav-img" src="../images/TiMe_PinkSky.png"></a></h1>
       <ul>
-        <li><a href="./project.html">Project Overview</a></li>
         <li><a href="./description.html">Project Description</a></li>
-        <li><a href="./tech-test-risk.html">Tools and Technologies, Testing & Risks</a></li>
-        <li><a href="./timeframe.html">Scope and Limits & Timeframe</a></li>
-        <li><a href="./team-profile.html">Team Profile</a></li>
+        <li><a href="./tech_test_risk.html">Tools & Technologies | Testing | Risks</a></li>
+        <li><a href="./timeframe.html">Scope & Limits | Timeframe</a></li>
+        <li><a href="./team_profile.html">Team Profile</a></li>
         <li><a href="./references.html">References</a></li>
       </ul>
     </nav>
@@ -31,33 +30,112 @@
   
   <div class="container">
 
-      <article>
-        <h2>Plans and Progress</h2>
-        <p>
-          Paragraph
-        </p>
-      </article>
+      <h2>Plans and Progress</h2>
 
-      <article class="card">
-        <h2>Heading 2 inside card</h2>
+    <article class="card">
+      
         <p>
-          Paragraph inside card
+          <h3>How it began</h3> <br>
+          The basic concept for the idea of TiMe initially came a few weeks prior to deciding to progress into a project idea. Jo is a casual employee with no access to recorded shift hours and every 2 weeks finding herself having to calculate the hours she worked and the Net pay earnt in those 2 weeks. Jo, after meeting Thomas and understanding his knowledge and abilities, approached Thomas to ask could he throw together something she could use to keep track of actual time worked and a way to calculate the earnings in the period. Thomas, in his minimal time outside of studying and other responsibilities, had planned a basic idea for what to come up with, however, due to study commitments, had not proceeded far with production. The initial idea was to provide a way to start/stop or enter manually shift start time and finish time, with ability to allow for unpaid breaks or split shifts. Further allowing data entered into shift time to be calculated by a pre-entered pay rate. Thomas had decided to deliver it as a web-based application for ease of access from any device.
         </p>
-      </article>
+        <p>
+          Circumstances surrounding group work for Assessment Task 2 IIT seen Thomas and Jo split off to work as a team of 2 moving into this assignment, Assessment Task 3. While having decided to commence a new project idea, that new idea had yet to come. After a few discussions around ideas, Thomas brought forward the idea that they take the idea of what Jo had asked for and expand on it to make it an actual project. It was decided this is the project that would be suitable and so began the research into features and requirements. Considerations that were taken into account when deciding on features and requirements were products currently available; What features lack in what is currently available; the most cost effective and accessible method of delivery; and previous experience among team members.
+        </p>
+    </article>
 
-      <article class="card">
-        <div class="card-header">
-          <h3>Thomas Kauran - s3305113</h3>
-          <span>Individual Website: <a href="https://justahack.github.io/intro-to-it-assignment-1/" target="_blank">Assignment 1 - Thomas</a></span>
-        </div>
-        <div class="card-details">
-          <p>
-            Hi, I'm Thomas.
-            Born and raised in Australia, my hobbies mainly include board games and video games. Interest in IT is focused on web development and cloud computing. Experience includes building web applications to meet clients' requirements on multiple platforms, including desktop, mobile and web.
-          </p>
-          <img class="card-pic" src="images/thomas.jpeg" alt="Picture of Thomas">
-        </div>
-      </article>
+  </div>
+
+  <div class="container">
+
+    <article class="card">
+        
+      <h3>How has it progressed</h3>
+          
+        <p>
+          From a very simple personal use web-based shift tracker, has developed into a simple, free way for any individual employee or freelance worker to track shift hours, manage a project and calculate by pay rate or rate by project agreement. When choosing a name for the project, the phrase Time Me came to mind, then thinking ‘squeeze that together’ to make TiMe.  
+        </p>
+          
+          <img class="card-pic-3" src="../images/TiMe_PinkSky.png" alt="TiMe Logo">
+
+        <p>
+          Overall, there was not a great deal of planning of the provided services. Most services that will be provided within the project were decided in our first meeting discussing our future project, certain potential features are not intended to be included until after the 15-week plan. The system requirements and production processes were chosen on personal preference and previous knowledge of team members. Following, will discuss the plans we have and progress we have made on the project, also what potential features could be added after the 15-week timeframe.
+        </p>
+    </article>
+
+    <article class="card">
+        <p>
+          <strong>Progress of the idea:</strong> Initially the idea was just to be a single page web delivered time tracker with wage calculator. Intended to record daily, weekly, fortnightly, and ongoing shift data with ability to calculate by a pre-input wage for an individual employee. Research into currently available products and services available indicated majority of similar services available were designed for businesses to manage staff, many of these do not allow employees to see their shift data or how much they have earned in the pay period. <br>
+          Alternatively, there were options specifically for individual employees to enter and track shifts, receive alerts and reminders, and integrate with other calendars, however most of these only available on mobile app, and a majority of those on android only. Web-based available services lacked ability to save and track data, and were very particular with how it calculates, it took time to find the one that made the correct calculation needed. <br> 
+          Further, the products and services available to freelance workers was limited, and a majority of what was found were limited to a specific style freelance work. The findings led to a decision to design TiMe to be available for individual employees and freelance workers of any style however is not designed for business use or team management. 
+        </p>
+  
+    </article>
+
+    <article class="card">
+
+        <p>
+          <strong>Deliverables Progress:</strong> Initially, the features we confirmed was a system that allows users to create an account, log in, and enter and save shift data which would calculate by pre-entered wage data and record a running tally of earnings. The wage or pay rate would be entered into its own form and saved. Shift data would be able to be entered manually or by choosing a start and finish time, extending on this, it is intended that in future plans a break time per shift will be implemented. 
+        </p>
+        <p>
+          Further to these features, users can create an account, protected by hashed password authorization, allowing user to enter, save and change data securely. Cookie authentication will be used for prototype, which has been built as a monolithic program alone for purpose of prototype. Users will have access to individual shift, weekly, fortnightly, monthly, and annual shift hours, and calculated wage earnings in those periods. Further, users will have the ability to enter and save upcoming shifts, which can later be edited. All data will also be accessible to download via CVS file. <br>
+          We later decided it would be beneficial to allow one-time use without an account, however data cannot be saved or retrievable using this feature. Alternatively, single shift data can be entered and calculated using this feature, which has now been produced as a prototype, and ready to be deployed. 
+        </p>
+        <p>
+          Moreover, another feature will be added that allows the user to integrate pre-existing calendars, however, this will likely not be implemented until after the 15-week plan. This feature will likely be added after the main features are available on all platforms. A final decision was how to display the recorded data, users will simply be able to search their preferred period of dates which will show data from the shifts within those dates, hours worked and calculated wage for chosen period.
+        </p>
+
+    </article>
+
+    <article class="card">
+
+      <p>
+        <strong>Production Progress:</strong> A Web-based application was chosen as the initial availability of the application. The ability to access a web app from any device coupled with the ease of later implementing access to mobile applications was the motivator for this decision. Thomas, with his previous knowledge, designed the basic set-up of the system (see diagram). 
+      </p>
+      <p>
+        It was a unanimous decision to use a cloud service provider to deploy the application, however a decision on which provider we will use would not be decided until later, likely after week 10, once we can get quotes on the services needed for the deliverables included in deployment (Azure, AWS, or Google cloud likely first preferences).
+      </p>
+      <p>
+        Moreover, Jo, also studying DevOps, learned some processes that would make the production and management more efficient. It was decided the project would be built as microservices, in a container (likely Docker, but will be a later decision due to lack of knowledge), allowing continuous uninterrupted deployment of our application. Building in microservices means each feature of the application is built on its own saved as its own branch in a Git Version control, further it keeps its own database, allowing faster data retrieval. Further it allows continuous integration and continuous delivery, therefore updated with no downtime. All these microservices will be stored within a container allowing easy deployment through cloud services. With Thomas’s previous knowledge and experience, Visual Studio Code was used to write the working code in C#; HTML, CSS, JavaScript and SQL for the prototype of TiMe.
+      </p>
+
+    </article>
+
+  </div>
+  <div class="container">
+
+    <article class="card">
+        
+      <h3>What stage of the plan you are up to</h3>
+          
+        <p>
+          Progress toward the production of the project is further progressed than initially planned. Initially it was believed it would be achievable to provide a prototype of the main feature which consisted of creating *explain how u built main feature*, however, enough time became available to add further main features.   
+        </p>
+        
+        <p>
+          Authentication and Authorization were successfully added using *fill in method*.  
+        </p>
+
+        <p>
+          Account Creation and Login features were then able to be successfully added by *input your method*.  
+        </p>
+
+        <p>
+          Further, a database to hold the user information and for easy data retrieval of account information and previously entered data. *how database was made*.  
+        </p>
+
+        <p>
+          The most important part of the main feature is ability to save, edit, delete, and retrieve data. This is made possible by *enter how this process works and how u built it*  
+        </p>
+
+        <p>
+          The project is in final stages of web-based main features being completed. The main feature being the first completed, followed by successful completion of Authentication an Authorization. Next was creation of account creation and login features, then leading to the add-on features to the main feature, data entry and manipulation. Finishing with the local database needed to store user data.  
+        </p>
+
+        <p>
+          Overall, the progression of the project is much more progressed at this stage than we initially believed was possible. This in return would bring forward the features that were anticipated to be implemented outside the 15-week plan. Given this rapid progress, it would be achievable to have chosen a cloud service provider, add in calendar integration and even UI updates and have the application actively deployed and fully functional within the next 5 weeks.  
+        </p>
+  
+    </article>
 
   </div>
   

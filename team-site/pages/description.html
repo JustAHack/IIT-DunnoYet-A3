@@ -20,7 +20,7 @@
         <li><a href="./plans-progress.html">Plans & Progress</a></li>
         <li><a href="./tech_test_risk.html">Tools & Technologies | Testing | Risks</a></li>
         <li><a href="./timeframe.html">Scope & Limits | Timeframe</a></li>
-        <li><a href="./team-profile.html">Team Profile</a></li>
+        <li><a href="./team_profile.html">Team Profile</a></li>
         <li><a href="./references.html">References</a></li>
       </ul>
     </nav>
@@ -30,7 +30,7 @@
   <div class="container">
 
     <article>
-        <img class="diagram" href="../images/proj_Time.png" alt="Project name image"></a>
+        <img class="diagram" src="../images/proj_Time.png" alt="Project name image"></a>
     </article>
 
     <article class="card">
@@ -49,7 +49,7 @@
         
       <h2>Goals</h2>
         <p>
-          <h5>User System</h5>
+          <h4>User System</h4>
           User system contains two crucial components, referred to as microservices in this document; Users will first open an <em>account creation</em> page which then provides access to the application. In addition, the user system will have access to a database where user data is held, such as login details. Breaking this component into 2 separate microservices allows rapid development, using test Driven Development (TDD) to ensure development is faster and more accurate. Each microservice, will be tested during production to ensure rapid delivery of each component. Further with automated testing using this process will create a Continuous Integration and Continuous Delivery (CI/CD) providing a service with minimal disruption. Data collected in this component will be stored within a database provided by the cloud service provider which our service is developed on.
         </p>
     
@@ -63,7 +63,7 @@
     </article>
     <article class="card">
         <p>
-          <h5>Authentication / Authorization System</h5>
+          <h4>Authentication / Authorization System</h4>
           The following task would be creating an <em>Authentication / Authorization system</em>. Having an authentication system is crucial to ensure users to have security for their private information held in the account. This process consists of two separate components:
         </p>
     
@@ -72,17 +72,17 @@
         </p>
     
         <p>
-            <em>Authorization</em> using microservices can be tricky, however, possible with JWT’s or a third-party Identity Service. There are several different implementation paths when using JWT’s to implement authorization within microservices which will require further deliberation and research. Currently the most viable option would be to have the API Gateway verify the validity of the JWT and then direct the request through to the microservice and pass the JWT along.
+          <em>Authorization</em> using microservices can be tricky, however, possible with JWT’s or a third-party Identity Service. There are several different implementation paths when using JWT’s to implement authorization within microservices which will require further deliberation and research. Currently the most viable option would be to have the API Gateway verify the validity of the JWT and then direct the request through to the microservice and pass the JWT along.
         </p>
     </article>
     <article class="card">
         <p>
-          <h5>Timesheet Management System</h5>
+          <h4>Timesheet Management System</h4>
           The Next step in development phase is the <em>Timesheet Management System</em>; this is the feature section, where users can enter and manage data relating to shifts or projects. Timesheet Management System will have two microservices belonging to it to allow CI/CD throughout Data Collection, Storage, and Retrieval.
         </p>
     
         <p>
-            The first will be <em>Data Collection</em>; Users will have ability to enter start & finish times manually allowing user to enter rostered shifts in advance; or using a start/stop timer which is used to start and stop current working times, the system then records the hours which have been recorded by the timer. Users can enter a rate of pay, which then calculates data from each shift entry to give daily, weekly, monthly wage total.
+          The first will be <em>Data Collection</em>; Users will have ability to enter start & finish times manually allowing user to enter rostered shifts in advance; or using a start/stop timer which is used to start and stop current working times, the system then records the hours which have been recorded by the timer. Users can enter a rate of pay, which then calculates data from each shift entry to give daily, weekly, monthly wage total.
         </p>
 
         <p>
@@ -107,14 +107,14 @@
     <article class="card">
 
         <p>
-          <h5>User Interface (UI)</h5>
+          <h4>User Interface (UI)</h4>
           The next stage will be the design and building of User Interface (UI) for each platform. TiMe is intended to be available as a <em>web browser application</em>, which will be in its initial launch phase; Later we expect to further make TiMe available as both a desktop app and mobile app. Each application its own microservice. 
         </p>
         <p>
           As previously stated, it is intended that the web browser application will be the first UI implemented. A web-based application can be accessed on a browser from any device and therefore makes it a universally accessible application. The web-based UI will be developed using HTML, CSS & JavaScript, providing a seamless user experience. 
         </p>
         <p>  
-          Future development will incorporate APIs of a downloadable <em>desktop application</em> and a <em>mobile application</em> available on android and Apple devices. Each interface will become its own microservice, developed individually using TDD, further allowing CI/CD for a smooth uninterrupted user experience. Each UI will pull from each microservices public facing API to obtain data to be processed and displayed to users to create, view, and update personal data. </p>
+          Future development will incorporate APIs of a downloadable <em>desktop application</em> and a <em>mobile application</em> available on android and Apple devices. Each interface will become its own microservice, developed individually using TDD, further allowing CI/CD for a smooth uninterrupted user experience. Each UI will pull from each microservices public facing API to obtain data to be processed and displayed to users to create, view, and update personal data. Future features may include personalization of background colours and contrasts, and dark mode. 
         </p>
 
     </article>
@@ -122,7 +122,7 @@
     <article class="card">
 
         <p>
-          <h5>Calendar Integration</h5>
+          <h4>Calendar Integration</h4>
           Another potential future implementation into TiMe is <em>Calendar Integration</em>. An ability to sign in and integrate your work shift schedule into already existing calendars. Likely calendars to be integrated would be major calendar services such as Google calendar; Outlook Calendar; Samsung Calendar; Apple Calendar. <br><br>
           This feature will likely not be introduced within 16 weeks, therefore not a lot of information has been researched in relation to what is involved in the process of enabling access to these services through our application.
         </p>
