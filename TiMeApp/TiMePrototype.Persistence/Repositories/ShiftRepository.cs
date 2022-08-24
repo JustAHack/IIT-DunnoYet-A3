@@ -17,4 +17,9 @@ public class ShiftRepository : GenericRepository<Shift>, IShiftRepository
     {
         return await _context.Set<Shift>().AsNoTracking().Where(x => x.UserId == userId).OrderByDescending(x => x.StartTime).ToListAsync();
     }
+
+	public async Task<IReadOnlyList<Shift>> GetUsersShiftsBetweenDates(int userId, DateTime start, DateTime end)
+	{
+		return await _context.Set<Shift>().AsNoTracking().Where(x => x.UserId == userId && x.StartTime >= start && x.EndTime <= end).ToListAsync();
+	}
 }
