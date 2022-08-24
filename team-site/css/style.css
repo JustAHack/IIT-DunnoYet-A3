@@ -15,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 90%;
   padding: 0 5%;
 }
 
@@ -29,15 +29,16 @@ a {
 
 nav {
   background-color: #c3c3c5;
+  color:#252a69;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-
 .nav-img{
   max-width: 200px;
 }
+
 
 nav > ul {
   display: flex;
@@ -46,10 +47,6 @@ nav > ul {
   list-style-type: none;
 }
 
-nav > h1 > a,
-nav > ul > li > a {
-  color:#252a69;
-}
 
 /* PROFILE PAGE */
 
@@ -80,18 +77,37 @@ nav > ul > li > a {
 
 
 table {
-  background-color: #f5f5f5;
-  color:rgb(26, 2, 79);
+  background-color: #f0e9f4ce;
+  color:#1a024f;
+  width: 100%;
   border-spacing: 10px;
+  border-collapse: collapse;
   border: solid 2px;
-  border-color: #353434; 
+  border-color: #490c6ad8; 
 }
-
-th, td {
-  width: 120px;
-  overflow: hidden;
+.table-header{
+  background-color: #490c6ad8;
+  color: #f5e4ffb1;
+  padding: 2%;
+  border-collapse: collapse;
+  border: solid 2px;
+  border-color: #490c6ad8;
 }
-
+.table-col-1{
+  width: 20%;
+  text-align: right;
+  padding-right: 5%; 
+  border-collapse: collapse;
+  border: solid 2px;
+  border-color: #490c6ad8;
+}
+.table-col-2{
+  width: 120%;
+  padding: 2%;
+  border-collapse: collapse;
+  border: solid 2px;
+  border-color: #490c6ad8;
+}
 
 
 /* IT TECHNOLOGIES */
@@ -126,10 +142,6 @@ span > a {
 
 .underline {
   text-decoration: underline;
-}
-
-img {
-  max-width: 750px;
 }
 
 @media only screen and (min-width: 800px) {
