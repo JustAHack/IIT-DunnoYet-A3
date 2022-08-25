@@ -6,7 +6,7 @@ using TiMePrototype.Application.Features.Shift.Requests.Queries;
 
 namespace TiMePrototype.Application.Features.Shift.Handlers.Queries;
 
-public class GetShiftDetailsRequestHandler : IRequestHandler<GetShiftDetailsRequest, UpdateShiftDto>
+public class GetShiftDetailsRequestHandler : IRequestHandler<GetShiftDetailsRequest, ShiftDetailsDto>
 {
     private readonly IShiftRepository _shiftRepository;
     private readonly IMapper _mapper;
@@ -17,10 +17,10 @@ public class GetShiftDetailsRequestHandler : IRequestHandler<GetShiftDetailsRequ
         _mapper = mapper;
     }
 
-    public async Task<UpdateShiftDto> Handle(GetShiftDetailsRequest request, CancellationToken cancellationToken)
+    public async Task<ShiftDetailsDto> Handle(GetShiftDetailsRequest request, CancellationToken cancellationToken)
     {
         var shift = await _shiftRepository.GetAsync(request.Id);
 
-        return _mapper.Map<UpdateShiftDto>(shift);
+        return _mapper.Map<ShiftDetailsDto>(shift);
     }
 }

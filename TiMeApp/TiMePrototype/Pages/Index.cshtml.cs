@@ -1,7 +1,6 @@
-﻿using FoolProof.Core;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TiMePrototype.Domain;
+using TiMePrototype.Application.DTOs.Shift;
 
 namespace TiMePrototype.Pages;
 
@@ -9,8 +8,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
 
-    [BindProperty]
-    public Shift? Shift { get; set; }
+    public ShiftDto? Shift { get; set; }
 
     public IndexModel(ILogger<IndexModel> logger)
     {
@@ -21,11 +19,17 @@ public class IndexModel : PageModel
     {
     }
 
-    public IActionResult OnPostAsync()
+    public IActionResult OnPost([FromForm] ShiftDto shift)
     {
         if (!ModelState.IsValid) return Page();
+        Shift = new ShiftDto()
+        {
+            StartTime = shift.StartTime,
+            EndTime = shift.EndTime,
+            HourlyRate = shift.HourlyRate
+        };
 
-        // Redirect to page detailing daily earnings
+        Shift.CalculateDailyWage();
 
         return Page();
     }

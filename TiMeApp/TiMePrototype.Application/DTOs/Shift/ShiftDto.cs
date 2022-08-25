@@ -39,5 +39,11 @@ namespace TiMePrototype.Application.DTOs.Shift
                 _dailyWage = HourlyRate * (decimal)TotalHours;
             }
         }
+
+        public decimal CalculateDailyWage()
+        {
+            _dailyWage = HourlyRate * (decimal)EndTime.Subtract(StartTime).TotalHours;
+            return _dailyWage;
+        }
     }
 }

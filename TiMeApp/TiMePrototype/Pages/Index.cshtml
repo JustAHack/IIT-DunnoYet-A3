@@ -6,6 +6,22 @@
 
 <div class="container">
     <h2 class="display-4 mb-2">Calculate Daily Earnings</h2>
+
+    @if (@Model.Shift?.DailyWage > 0)
+    {
+        <div class="card mw-25">
+            <div class="card-body">
+                <div class="card-title">
+                    @Html.DisplayNameFor(x => x.Shift!.DailyWage)
+                </div>
+
+                <div class="card-text">
+                    <span class="text-success">$@Model.Shift!.DailyWage.ToString("#.##")</span>
+                </div>
+            </div>
+        </div>
+    }
+
     <form class="py-2" method="post">
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
         <div class="form-group row">
@@ -30,9 +46,9 @@
 
             <div class="py-2 col-md-4">
                 <input class="form-control" asp-for="Shift.EndTime" type="datetime-local"
-                       value="@(Model.Shift != null 
-                            ? @Model.Shift.EndTime.ToString("yyyy-MM-ddTHH:mm") 
-                            : @DateTime.Now.AddHours(1).ToString("yyyy-MM-ddTHH:mm"))"/>
+                       value="@(Model.Shift != null
+                            ? @Model.Shift.EndTime.ToString("yyyy-MM-ddTHH:mm")
+                            : @DateTime.Now.AddHours(1).ToString("yyyy-MM-ddTHH:mm"))" />
             </div>
 
             <span class="text-danger" asp-validation-for="Shift.EndTime"></span>

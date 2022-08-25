@@ -14,7 +14,7 @@ namespace TiMePrototype.Pages.TimesheetManagement
         private readonly IMediator _mediator;
 
         [BindProperty]
-        public UpdateShiftDto? Shift { get; set; }
+        public ShiftDetailsDto? Shift { get; set; }
 
         public EditShiftModel(IMediator mediator)
         {
@@ -55,15 +55,13 @@ namespace TiMePrototype.Pages.TimesheetManagement
                 var command = new UpdateShiftCommand { ShiftDto = Shift! };
                 var response = await _mediator.Send(command);
 
-                return RedirectToPage("./Shifts");
+                return RedirectToPage("./EditShift", new { Id = Shift.Id });
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message.ToString());
-                return RedirectToPage("/Shifts");
+                return RedirectToPage("./Shifts");
             }
-
-            return Page();
         }
     }
 }
