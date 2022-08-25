@@ -23,13 +23,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/TimesheetManagement/Shifts">Shifts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/TimesheetManagement/Earnings">Shift Search and Earnings</a>
                         </li>
                     </ul>
+                    <div class="mr-2">
+                        <partial name="_LoginStatusPartial" />
+                    </div>
                 </div>
-                <div class="mr-2">
-                    <partial name="_LoginStatusPartial" />
-                </div>
+                
             </div>
         </nav>
     </header>
@@ -41,7 +45,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - TiMePrototype - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - TiMePrototype - Team DunnoYet
         </div>
     </footer>
 
