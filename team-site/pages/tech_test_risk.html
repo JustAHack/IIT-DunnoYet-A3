@@ -15,13 +15,13 @@
   <header>
 
     <nav>
-      <h1><a href="../../index.html"><img src="../images/TiMe-pink_sky.png"></a></h1>
+      <h1><a href="../../index.html"><img class="nav-img" src="../images/TiMe_PinkSky.png"></a></h1>
       <ul>
-        <li><a href="./project.html">Project Overview</a></li>
         <li><a href="./description.html">Project Description</a></li>
         <li><a href="./plans-progress.html">Plans & Progress</a></li>
-        <li><a href="./timeframe.html">Scope and Limits & Timeframe</a></li>
-        <li><a href="./team-profile.html">Team Profile</a></li>
+        <li><a href="./tech_test_risk.html">Tools & Technologies | Testing | Risks</a></li>
+        <li><a href="./timeframe.html">Scope & Limits | Timeframe</a></li>
+        <li><a href="./team_profile.html">Team Profile</a></li>
         <li><a href="./references.html">References</a></li>
       </ul>
     </nav>
@@ -43,7 +43,7 @@
         </div>
         <div class="card-details">
 
-          <img class="card-pic" src="../images/MS-VisStudio.jpg" alt="Visual Studio 2022 Logo">
+          <img class="card-pic-2" src="../images/MS-VisStudio.jpg" alt="Visual Studio 2022 Logo">
           <p>        
             Visual Studio is a fully featured and extensible integrated development environment (IDE) used to create applications for multiple devices including but not limited to Windows, Apple iOS, web and cloud-based services. The IDE provides numerous tooling such as IntelliSense, testing, debugging, development, and production tools for rapid application development. (Visual Studio, 2022). Thomas has had previous experience using this software through-out his degree with RMIT in numerous subjects to work on subject material and assignments.
           </p>
@@ -54,10 +54,11 @@
       <article class="card">
         <div class="card-header">
           <h3>Visual Studio Code</h3>
+          
         </div>
         <div class="card-details">
 
-          <img class="card-pic" src="../images/VSCode.png" alt="VS Code Logo">
+          <img class="card-pic-2" src="../images/VSCode.png" alt="VS Code Logo">
           <p>
             Visual Studio Code is a multi-platform IDE that provides support for several programming languages including but not limited to JavaScript, Python, Java, C, C++, PHP, Java and C#. Users can create and share extensions for almost anything including new languages, themes and debuggers (Visual Studio Code, 2022). Thomas has had previous experience using this software through-out his degree with RMIT in numerous subjects to work on subject material and assignments.
           </p>
@@ -91,16 +92,18 @@
           <p>
             DevOps provides organized and well-structured methods of building a product including everyone involved in process from start to finish, ensures code is tested and working prior to deployment, and further allows continuous deployment. Working in small batches, using TDD and BDD to ensure working code and product satisfaction. Building using Continuous Integration (CI) and Continuous Delivery (CD) – this process requires a code repository and an artifact repository; build server and integration server; and automatic configuration and deployment tool, and these are all available through cloud service providers (Rofrano, J. 2022). Jo has learnt the methods of DevOps from an outside course Intro to DevOps. <em>(diagram below shows continuous deployment flow)</em>
           </p>
-          <br><br>
+          
           
         </div>
         <div>
-          <img src="../diagrams/CI-CD_delivery.jpg" alt="CI/CD diagram">
+          <img class="diagram-2" src="../images/CI-CD_delivery.jpg" alt="CI/CD diagram">
         </div>
       </article>
+      
 
       <article class="card">
         <div class="card-header">
+          
           <h3>Cloud Servive Providers - SaaS</h3>
           
         </div>
@@ -131,29 +134,38 @@
   </div>
   <div class="container">
 
-    <article>
-      <h2>Testing</h2>
+    <h2>Testing</h2>
+
+    <article class="card">
+      
       <p>
-        <h5>How will you test your project?</h5>
-        Testing products has a wide variety of different approaches and techniques, some overlapping. Testing methods include user testing and software development processes such as system tests including unit testing and integration tests. TiMe will incorporate system testing during the development and maintenance periods. This will include testing the business logic such as how shifts are created, updated, and deleted, how users are created, updated, and deleted etc. User testing is important to our project as our product should be built for our target audience and fit their needs, not the needs we believe they have. The focus for testing will be on the prototype, finding out what the testers like and dislike about the user interface, testing how long a tasks duration is, and determine pain points. Using Test Driven Development (TDD) process means every time a pull request is made for new code, it is reviewed by other team members, ensuring better quality code. Further, only fully tested and working code gets merged to main branch, this process is used working with microservices, and ensures the final product is readily deliverable. Additionally, using Behaviour Driven Development (BDD) ensures you deliver the right product. A customer’s wants and needs is important and involving the customer in the production process from start to finish means a better result and allows input from the customer for changes during production. Combining TDD and BDD ensures that you deliver a working product that meets the customer’s needs.
+        <h3>How will you test your project?</h3>
+        Testing products has a wide variety of different approaches and techniques, some overlapping. Testing methods include user testing and software development processes such as system tests including unit testing and integration tests. TiMe will incorporate system testing during the development and maintenance periods. This will include testing the business logic such as how shifts are created, updated, and deleted, how users are created, updated, and deleted etc. User testing is important to our project as our product should be built for our target audience and fit their needs, not the needs we believe they have. The focus for testing will be on the prototype, finding out what the testers like and dislike about the user interface, testing how long a tasks duration is, and determine pain points. 
+      </p>
+      <p>
+        Using Test Driven Development (TDD) process means every time a pull request is made for new code, it is reviewed by other team members, ensuring better quality code. Further, only fully tested and working code gets merged to main branch, this process is used working with microservices, and ensures the final product is readily deliverable. Additionally, using Behaviour Driven Development (BDD) ensures you deliver the right product. A customer’s wants and needs is important and involving the customer in the production process from start to finish means a better result and allows input from the customer for changes during production. Combining TDD and BDD ensures that you deliver a working product that meets the customer’s needs.
       </p>
 
-    <br><br>
+    </article>
 
-      <p>
-        <h5>Does your project require user testing?</h5>
-        <em><strong>How you will find the test users?</strong></em>
+    <article class="card">
+
+        <h3>Does your project require user testing?</h3>
+      
+        <em>How you will find the test users?</em>
+      <p> 
         Considering TiMe’s use cases and target audience, it would not be too difficult to find users to test a prototype and features to get feedback. Friends and family who require such services are a possibility but would be potentially less useful due to the nature of them being familiar with our team. Creating posts on places like reddit, Facebook, twitter or other social media platforms could work if we provided them with an incentive to participate. Finally, we could choose to enlist the online services of a testing company such as TryMyUi or uTest. 
       </p>
-    <br><br>
+      
+        <em>How many people you will be needed?</em>
       <p>
-        <em><strong>How many people you will be needed?</strong></em>
         It would be preferable to stick to the industries “tried-and-true" method of using five testers per usability test. However, I believe with the lack of funds the team has, we may only be able to get two testers per usability test. 
       </p>
-    <br><br>
+    
+      
+        <em>What background (if any) is required?</em>
       <p>
-        <em><strong>What background (if any) is required?</strong></em>
-        Testers should be experienced in the following areas 
+        Testers should be experienced in the following areas: 
         <ul>
           <li>Using web browsers to access websites</li>
           <li>Signing up for services</li>
@@ -167,77 +179,62 @@
   
   <div class="container">
 
-    <article>
       <h2>Risks</h2>
-      <div>
-        <h4>What risks can be identified?</h4>
-        <p>
-          Fortunately, most of the risks identified with project TiMe had a solution. Ultimately, using methods and principles of DevOps has allowed risks to be minimized. 
-        </p>
-      </div>
+
+    <article class="card">
+      
+        <h3>What risks can be identified?</h3>
+      <p>
+        Fortunately, most of the risks identified with project TiMe had a solution. Ultimately, using methods and principles of DevOps has allowed risks to be minimized. However what we did encounter was if users had to create an account, would it deter them from initially using the app; Code intergration breakage; Throttling; JWT attck; and SQL injection. Below explains each of these and the solution to each of the risks.
+      </p>
+      
     </article>
 
     <article class="card">
-      <div class="card-header">
-        <h3>Having to create an account being a deterrent from using app.</h3>
-      </div>
-      <div class="card-details">
-
+      
+        <h4>Having to create an account being a deterrent from using app.</h4>
         <p>
           Solution: Allow single use of main feature without having to create an account. However, using without an account will not allow any entered data to be saved.
         </p>
-      </div>
+      
     </article>
 
     <article class="card">
-      <div class="card-header">
-        <h3>Code integration breakage</h3>
-      </div>
-      <div class="card-details">
-
+     
+        <h4>Code integration breakage</h4>
         <p>
           Solution: Developing each function of the project as its own, referred to as Microservices, each tested for vulnerabilities and quality code through an automated test process. Using Test Driven Development (TDD) and Behaviour Driven Development (BDD) to ensure quality end product that works and meets user needs (Rofrano, J. 2022).
         </p>
-      </div>
+    
     </article>
 
     <article class="card">
-      <div class="card-header">
-        <h3>Throttling</h3>
-      </div>
-      <div class="card-details">
-
+      
+        <h4>Throttling</h4>
         <p>
           Cloud Service Providers will provide a certain ‘read limit’. They will hold to agreement, therefore if you exceed the read limit, you receive an error code of “429_TOO_MANY_REQUESTS” (Rofrano, J. 2022) and need to plan how to reduce read instances.
         </p>
-      </div>
+      
     </article>
 
     <article class="card">
-      <div class="card-header">
-        <h3>JWT Attack</h3>
-      </div>
-      <div class="card-details">
+      
+        <h4>JWT Attack</h4>
+      <p>
+        A poorly implemented JWT verification system leads to various potential attack vectors for JWT’s, one such attack is exploiting flawed JWT Signatures. <br>
+        <strong>Solution:</strong> Follow the JWT specification, including the underlying JWS and JWE specifications to obtain a better understanding of how to correctly build this type of authentication system, understand and develop a solution to validate a token correctly so that it is trustworthy and finally not to store sensitive data that can be exploited, such as user flags e.g., isAdmin.
+      </p>
 
-        <p>
-          <strong>Problem:</strong> A poorly implemented JWT verification system leads to various potential attack vectors for JWT’s, one such attack is exploiting flawed JWT Signatures.
-          <strong>Solution:</strong> Follow the JWT specification, including the underlying JWS and JWE specifications to obtain a better understanding of how to correctly build this type of authentication system, understand and develop a solution to validate a token correctly so that it is trustworthy and finally not to store sensitive data that can be exploited, such as user flags e.g., isAdmin.
-
-        </p>
-      </div>
     </article>
 
     <article class="card">
-      <div class="card-header">
-        <h3>SQL Injection</h3>
-      </div>
-      <div class="card-details">
-
-        <p>
-          <strong>Problem:</strong> SQL Injection is the act of maliciously injecting sql commands into input fields to  interfere with application logic which then may return sensitive or hidden data, that was never intended to be shared through that mechanism.
-          <strong>Solution:</strong> The most simple and effective prevention method is to use parameterized queries rather than concatenation. Parameterized queries do not allow for the structure of a  query to be altered through user input. For this to work, the query string must always be a constant, never a case-by-case variable.
-        </p>
-      </div>
+      
+        <h4>SQL Injection</h4>
+      <p>
+        SQL Injection is the act of maliciously injecting sql commands into input fields to  interfere with application logic which then may return sensitive or hidden data, that was never intended to be shared through that mechanism. <br>
+        <strong>Solution:</strong> The most simple and effective prevention method is to use parameterized queries rather than concatenation. Parameterized queries do not allow for the structure of a  query to be altered through user input. For this to work, the query string must always be a constant, never a case-by-case variable.
+      </p>
+      
     </article>
 
   </div>
