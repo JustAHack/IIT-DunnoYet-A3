@@ -10,6 +10,7 @@ html {
   margin: 0 auto;
   max-width: 90%;
   padding: 0 5%;
+  padding-bottom: 2.5rem;
 }
 
 a {
@@ -83,6 +84,11 @@ body {
 .prototype-screenshots {
   display: block;
   margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* PROFILE PAGE */
