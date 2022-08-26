@@ -1,6 +1,6 @@
 # IIT-DunnoYet-A3
 
-Our team is proud to present our third assignment for Introduction to Information Technology, we have included a Prototype of our proposed project in the TiMeApp folder, we hope you enjoy reading through our proposed project and the prototype we have built.
+Our team is proud to present our third assignment for Introduction to Information Technology, we have included a Prototype of our proposed project in the TiMeApp folder, we hope you enjoy reading through our proposed project and viewing the prototype we have built.
 
 ## How to run the Prototype
 
