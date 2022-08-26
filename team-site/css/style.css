@@ -6,8 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
 .container {
   margin: 0 auto;
   max-width: 90%;
@@ -18,13 +16,17 @@ a {
   word-wrap: break-word;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*
   NAVIGATION
 */
 
 nav {
   background-color: #1a024f;
-  color: #ded9e1ce;
+  color: #ded9e1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -36,6 +38,10 @@ nav > ul {
   flex-wrap: wrap;
   gap: 2.2rem;
   list-style-type: none;
+}
+
+nav > ul > li > a {
+  color: #c0bcc5;
 }
 
 .nav-img{
@@ -72,10 +78,17 @@ body {
   width: 60%;
 }
 
+/* Plans & Project page */
+
+.prototype-screenshots {
+  display: block;
+  margin: 20px 0;
+}
+
 /* PROFILE PAGE */
 
 .card {
-  background-color: #f1ebf5ce;
+  background-color: #f1ebf5;
   color: #1a024f;
   padding: 15px 25px;
   border-radius: 5px;
@@ -114,7 +127,7 @@ body {
 /* TIMEFRAME */
 
 .table {
-  background-color: #ded9e1ce;
+  background-color: #ded9e1;
   color:#1a024f;
   width: 100%;
   border-spacing: 10px;
@@ -129,7 +142,7 @@ body {
   height: 75px;
   border-collapse: collapse;
   border: solid 2px;
-  border-color: #ded9e1ce;
+  border-color: #ded9e1;
 }
 .table-col-1{
   width: 20%;
@@ -137,16 +150,15 @@ body {
   padding-right: 5%; 
   border-collapse: collapse;
   border: solid 2px;
-  border-color: #2b0c6ad8;
+  border-color: #2b0c6a;
 }
 .table-col-2{
   width: 120%;
   padding: 2%;
   border-collapse: collapse;
   border: solid 2px;
-  border-color: #2b0c6ad8;
+  border-color: #2b0c6a;
 }
-
 
 /* LINKS */
 
@@ -163,7 +175,7 @@ span > a {
 /* REFERENCES */
 
 .references {
-  background-color: #4232647e;
+  background-color: #423264;
   font-size: small;
   padding: 10px;
   width: 80%;
