@@ -13,3 +13,7 @@ If you have issues running the prototype, please contact me for assistance.
 
 ### Notes
 This project is not meant to be used for a production environment, it is merely a prototype to demonstrate some of the proposed projects features. 
+
+
+# Team website
+https://justahack.github.io/IIT-DunnoYet-A3/
